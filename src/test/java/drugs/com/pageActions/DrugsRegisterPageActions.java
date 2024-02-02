@@ -20,15 +20,16 @@ public class DrugsRegisterPageActions {
 
 	
 	
-	public void verifyEmail(){
+	public void verifyEmail() throws Throwable{
 		DrugsRegisterResultLocatorsObj.EnterValidInfo.sendKeys("abc@gmail.com");
-		DrugsRegisterResultLocatorsObj.ClicktoEmailButton.click();
+		Thread.sleep(2000);
 	}
 		
 	
    
-	public void verifyEmailButton(){
+	public void verifyEmailButton() throws Throwable {
 		DrugsRegisterResultLocatorsObj.ClicktoEmailButton.click();
+		Thread.sleep(2000);
 	}
 	
 	
